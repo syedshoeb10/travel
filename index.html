@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
+    <title>portfolio</title>
+    <style type="text/css">
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url(./IMG_20220201_144331_180.jpg);
+            background-size: cover;
+            font-family: sans-serif;
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                color: black;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;           
+             }
+             .logo{
+                font-size: 2em;
+                letter-spacing: 2px;
+
+             }
+             .menu a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                position: relative;
+             }
+             .menu a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+              border-bottom: 2px solid indianred;
+              transition: 0.4s linear;
+             }
+             .menu a:hover:before{
+                width: 90%;
+             }
+             .register a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                transition: 0.4s ;
+                border-radius: 8px;
+                background: indianred;
+             }
+             .register a:hover{
+
+                background: transparent;
+                border: 1px solid indianred;
+             }
+             .header-text{
+                max-width: 650px;
+                position: absolute;
+              text-align: center;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              color: white;
+
+             }
+             .header-text span{
+                letter-spacing: 5px;
+
+             }
+             .header-text h1{
+                font-size: 3.5em;
+
+             }
+             .header-text a{
+                text-decoration: none;
+                background: indianred;
+                color: white;
+                padding: 10px 20px;
+                letter-spacing: 5px;
+                transition: 0.4s;
+
+             }
+             .header-text a:hover{
+                background: transparent;
+                border: 1px solid indianred;
+             }
+             .menu a{
+                text-transform: uppercase;
+                color: black;
+             }
+             .logo{
+                text-transform: capitalize;
+                color: brown;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                transition: 0.4s;
+             }
+             .logo p :hover {
+                color: black;
+                border-radius: 5px solid  ;
+             }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <p> syed shoeb</p>
+            </div>
+            <div class="menu">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+                <a href="#">gallery</a>
+                
+            </div>
+            <div class="register">
+                <a href="#">register</a>
+            </div>
+        </nav>
+        <section class="header-text">
+            <span>Enjoy </span>
+            <h1>International Travel Agency</h1>
+            <br>
+            <a href="#">Book Your Trip</a>
+
+        </section>
+       
+      
+    </header>
+    
+</body>
+</html>
